@@ -193,51 +193,6 @@ This project is useful for:
 
 ---
 
-## Important Note
 
-The uploaded notebook currently contains a **hardcoded Google Generative AI API key**. For safety, you should:
 
-1. remove the key from the notebook
-2. regenerate the key if it was ever shared publicly
-3. load secrets using environment variables instead
-
-A safer pattern is:
-
-```python
-import os
-import google.generativeai as genai
-
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-```
-
-Then set the key in your environment instead of writing it directly in the notebook.
-
----
-
-## Future Improvements
-
-- Support larger and more realistic graphs
-- Extend from grid graphs to road-network datasets
-- Improve GNN training with richer edge/node features
-- Add Bellman-Ford and A* for broader baseline comparison
-- Build a Streamlit or React dashboard for interactive visualization
-- Add robustness tests across multiple random graph instances
-
----
-
-## Author
-
-**Khushi**
-
-If this repository is part of an academic or portfolio project, you can add your full name, university, and GitHub profile here.
-
----
-
-## License
-
-You can add a license depending on how you want to share the project, for example:
-
-- MIT License
-- Apache 2.0
-- No license yet
 
